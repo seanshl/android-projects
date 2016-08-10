@@ -2,6 +2,7 @@ package com.example.activitytest;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,7 +26,8 @@ public class FirstActivity extends Activity {
 			public void onClick(View arg0) {
 				Toast.makeText(FirstActivity.this, "You clicked button 1", Toast.LENGTH_SHORT).show();
 				
-				Intent intent = new Intent("com.example.activitytest.ACTION_START");
+				Intent intent = new Intent(Intent.ACTION_VIEW);
+				intent.setData(Uri.parse("http://www.google.com"));
 				FirstActivity.this.startActivity(intent);
 			}
 			
