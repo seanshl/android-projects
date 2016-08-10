@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -25,10 +26,8 @@ public class FirstActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				Toast.makeText(FirstActivity.this, "You clicked button 1", Toast.LENGTH_SHORT).show();
-				String data = "Hello SecondActivity";
 				Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
-				intent.putExtra("extra_data", data);
-				FirstActivity.this.startActivity(intent);
+				FirstActivity.this.startActivityForResult(intent, 1);
 			}
 			
 		});
@@ -54,5 +53,18 @@ public class FirstActivity extends Activity {
 		}
 		
 		return true;
+	}
+	
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		switch(requestCode) {
+		case 1:
+			if (resultCode == RESULT_OK) {
+				String returnedData = data.getStringExtra("data_return");
+				Log.d("FirstActivty", returnedData);
+			}
+			break;
+		default:
+		}
 	}
 }
