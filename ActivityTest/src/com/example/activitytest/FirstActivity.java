@@ -25,7 +25,7 @@ public class FirstActivity extends Activity {
 			public void onClick(View arg0) {
 				Toast.makeText(FirstActivity.this, "You clicked button 1", Toast.LENGTH_SHORT).show();
 				
-				Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+				Intent intent = new Intent("com.example.activitytest.ACTION_START");
 				FirstActivity.this.startActivity(intent);
 			}
 			
