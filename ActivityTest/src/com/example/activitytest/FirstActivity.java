@@ -25,9 +25,9 @@ public class FirstActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				Toast.makeText(FirstActivity.this, "You clicked button 1", Toast.LENGTH_SHORT).show();
-				
-				Intent intent = new Intent(Intent.ACTION_VIEW);
-				intent.setData(Uri.parse("http://www.google.com"));
+				String data = "Hello SecondActivity";
+				Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+				intent.putExtra("extra_data", data);
 				FirstActivity.this.startActivity(intent);
 			}
 			
