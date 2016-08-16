@@ -1,8 +1,7 @@
 package com.example.uiwidgettest;
 
 import android.app.Activity;
-import android.app.AlertDialog.Builder;
-import android.content.DialogInterface;
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -42,31 +41,12 @@ public class MainActivity extends Activity implements OnClickListener{
 			Toast.makeText(this, inputText, Toast.LENGTH_SHORT).show();
 			imageView.setImageResource(R.drawable.jelly_bean);
 			
-			int progress = progressBar.getProgress();
-			progress += 10;
-			progressBar.setProgress(progress);
+			ProgressDialog progressDialog = new ProgressDialog(this);
+			progressDialog.setTitle("This is a progress dialog");
+			progressDialog.setMessage("Loading...");
+			progressDialog.setCancelable(true);
+			progressDialog.show();
 			
-			
-			Builder dialog = new Builder(this);
-			dialog.setTitle("This is a dialog");
-			dialog.setMessage("Something important");
-			dialog.setCancelable(false);
-			dialog.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-				@Override
-				public void onClick(DialogInterface dialog, int which) {
-					// TODO Auto-generated method stub
-					
-				}			
-			});
-			dialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-				
-				@Override
-				public void onClick(DialogInterface dialog, int which) {
-					// TODO Auto-generated method stub
-					
-				}
-			});
-			dialog.show();
 			break;
 		default: break;
 		}
