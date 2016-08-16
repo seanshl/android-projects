@@ -17,7 +17,6 @@ public class FirstActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		Log.d("FirstActivity", this.toString());
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.first_layout);
 		
@@ -26,8 +25,8 @@ public class FirstActivity extends Activity {
 
 			@Override
 			public void onClick(View arg0) {
-				//Standard startup
-				Intent intent = new Intent(FirstActivity.this, FirstActivity.class);
+				Toast.makeText(FirstActivity.this, "You clicked button 1", Toast.LENGTH_SHORT).show();
+				Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
 				FirstActivity.this.startActivityForResult(intent, 1);
 			}
 			

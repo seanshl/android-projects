@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.activitytest"
     android:versionCode="1"
@@ -15,7 +14,7 @@
         android:theme="@style/AppTheme" >
         <activity
 			android:name=".FirstActivity"
-			android:launchMode="singleTask"
+			android:launchMode="singleTop"
 			android:label="This is FirstActivity" >
 			<intent-filter>
 			<action android:name="android.intent.action.MAIN" />

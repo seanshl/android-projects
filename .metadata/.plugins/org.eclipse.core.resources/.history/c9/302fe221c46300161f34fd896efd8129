@@ -26,7 +26,6 @@ public class FirstActivity extends Activity {
 
 			@Override
 			public void onClick(View arg0) {
-				//Standard startup
 				Intent intent = new Intent(FirstActivity.this, FirstActivity.class);
 				FirstActivity.this.startActivityForResult(intent, 1);
 			}
