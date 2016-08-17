@@ -5637,3 +5637,27 @@ org.tigris.subversion.subclipse.core.SVNException: Provided SVN information does
 
 !ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2016-08-17 10:06:20.275
 !MESSAGE No repository found at http://download.eclipse.org/webtools/downloads/drops/R3.7.1/R-3.7.1-20150915020029/.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-08-17 15:51:42.119
+!MESSAGE Failed to load properties file for project 'ListViewTest'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-08-17 15:51:42.269
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at com.android.ide.eclipse.adt.internal.actions.AddSupportJarAction.installAppCompatLibrary(AddSupportJarAction.java:327)
+	at com.android.ide.eclipse.adt.internal.wizards.templates.NewProjectWizard$1.run(NewProjectWizard.java:280)
+	at com.android.ide.eclipse.adt.internal.wizards.templates.NewProjectWizard.performFinish(NewProjectWizard.java:377)
+	at com.android.ide.eclipse.adt.internal.wizards.templates.TemplateWizard$1.run(TemplateWizard.java:201)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2016-08-17 15:51:42.273
+!MESSAGE Could not auto-share project ListViewTest
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: Provided SVN information does not match that on disk for project 'ListViewTest'.
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2016-08-17 15:51:42.273
+!MESSAGE Provided SVN information does not match that on disk for project 'ListViewTest'.
