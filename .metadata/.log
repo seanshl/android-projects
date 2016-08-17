@@ -5661,3 +5661,15 @@ org.tigris.subversion.subclipse.core.SVNException: Provided SVN information does
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 !SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2016-08-17 15:51:42.273
 !MESSAGE Provided SVN information does not match that on disk for project 'ListViewTest'.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-08-17 16:10:18.142
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-08-17 16:10:18.147
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-08-17 16:10:18.151
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-08-17 16:10:18.156
+!MESSAGE Current file is not a match for the given config.
