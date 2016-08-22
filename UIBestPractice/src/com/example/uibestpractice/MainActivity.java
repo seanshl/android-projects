@@ -47,7 +47,6 @@ public class MainActivity extends Activity {
 					msgListView.setSelection(msgList.size());
 					inputText.setText("");
 				}
-				
 			}
 		});
 	}
