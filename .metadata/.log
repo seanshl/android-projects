@@ -7107,3 +7107,6 @@ org.xml.sax.SAXParseException; lineNumber: 291; columnNumber: 50; cvc-enumeratio
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2016-08-23 16:20:19.646
+!MESSAGE Current file is not a match for the given config.
