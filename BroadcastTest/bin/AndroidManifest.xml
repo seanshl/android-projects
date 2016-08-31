@@ -9,7 +9,6 @@
         android:targetSdkVersion="21" />
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:allowBackup="true"
@@ -26,9 +25,9 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name="com.example.broadcasttest.BootCompleteReceive" >
-            <intent-filter >
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
+        <receiver android:name=".MyBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="com.example.broadcasttest.MY_BROADCAST" />
             </intent-filter>
         </receiver>
     </application>
