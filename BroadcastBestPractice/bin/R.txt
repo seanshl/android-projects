@@ -226,7 +226,7 @@ int drawable abc_textfield_searchview_holo_light 0x7f020054
 int drawable abc_textfield_searchview_right_holo_dark 0x7f020055
 int drawable abc_textfield_searchview_right_holo_light 0x7f020056
 int drawable ic_launcher 0x7f020057
-int id account 0x7f090042
+int id account 0x7f090043
 int id action_bar 0x7f09001a
 int id action_bar_activity_content 0x7f090001
 int id action_bar_container 0x7f090019
@@ -240,7 +240,7 @@ int id action_menu_presenter 0x7f090003
 int id action_mode_bar 0x7f09002f
 int id action_mode_bar_stub 0x7f09002e
 int id action_mode_close_button 0x7f090022
-int id action_settings 0x7f090045
+int id action_settings 0x7f090046
 int id activity_chooser_view_content 0x7f090023
 int id always 0x7f09000d
 int id beginning 0x7f090014
@@ -254,6 +254,7 @@ int id edit_query 0x7f090036
 int id end 0x7f090015
 int id expand_activities_button 0x7f090024
 int id expanded_menu 0x7f09002a
+int id force_offline 0x7f090042
 int id home 0x7f090000
 int id homeAsUp 0x7f090008
 int id icon 0x7f090028
@@ -262,12 +263,12 @@ int id image 0x7f090025
 int id left_icon 0x7f090031
 int id listMode 0x7f090004
 int id list_item 0x7f090027
-int id login 0x7f090044
+int id login 0x7f090045
 int id middle 0x7f090016
 int id never 0x7f090010
 int id none 0x7f090017
 int id normal 0x7f090005
-int id password 0x7f090043
+int id password 0x7f090044
 int id progress_circular 0x7f090034
 int id progress_horizontal 0x7f090035
 int id radio 0x7f09002d
