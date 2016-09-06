@@ -15,4 +15,6 @@
 <fullyQualifiedTypeName name="com.example.uibestpractice.R.layout"/>
 <fullyQualifiedTypeName name="com.example.uibestpractice.R.id"/>
 <fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="com.example.filepersistencetest.R.id"/>
+<fullyQualifiedTypeName name="android.content.Context"/>
 </qualifiedTypeNameHistroy>
