@@ -5,6 +5,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
@@ -40,6 +41,11 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 					.setContentTitle("This is content title")
 					.setContentText("This is content text");
 			Notification notification = builder.build();
+			notification.vibrate = new long[] {0, 1000, 1000, 1000};
+			notification.ledARGB = Color.GREEN;
+			notification.ledOnMS = 1000;
+			notification.ledOffMS = 1000;
+			notification.flags = Notification.FLAG_SHOW_LIGHTS;
 			manager.notify(1, notification);
 			break;
 		default:
