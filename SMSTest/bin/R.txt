@@ -239,12 +239,13 @@ int id action_menu_presenter 0x7f090003
 int id action_mode_bar 0x7f09002f
 int id action_mode_bar_stub 0x7f09002e
 int id action_mode_close_button 0x7f090022
-int id action_settings 0x7f090042
+int id action_settings 0x7f090044
 int id activity_chooser_view_content 0x7f090023
 int id always 0x7f09000d
 int id beginning 0x7f090014
 int id checkbox 0x7f09002b
 int id collapseActionView 0x7f09000e
+int id content 0x7f090043
 int id default_activity_button 0x7f090026
 int id dialog 0x7f090012
 int id disableHome 0x7f090007
@@ -280,6 +281,7 @@ int id search_mag_icon 0x7f09003b
 int id search_plate 0x7f09003c
 int id search_src_text 0x7f09003d
 int id search_voice_btn 0x7f090041
+int id sender 0x7f090042
 int id shortcut 0x7f09002c
 int id showCustom 0x7f090009
 int id showHome 0x7f09000a

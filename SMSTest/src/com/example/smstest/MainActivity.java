@@ -1,16 +1,21 @@
 package com.example.smstest;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
 
+	private TextView sender;
+	
+	private TextView content;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		this.sender = (TextView)this.findViewById(R.id.sender);
+		this.content = (TextView)this.findViewById(R.id.content);
 	}
 
 }
