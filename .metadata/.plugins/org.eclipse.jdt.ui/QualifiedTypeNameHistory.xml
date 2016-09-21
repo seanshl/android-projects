@@ -13,7 +13,6 @@
 <fullyQualifiedTypeName name="com.example.uibestpractice.R.layout"/>
 <fullyQualifiedTypeName name="com.example.uibestpractice.R.id"/>
 <fullyQualifiedTypeName name="com.example.filepersistencetest.R.id"/>
-<fullyQualifiedTypeName name="android.content.Context"/>
 <fullyQualifiedTypeName name="com.example.sharedpreferencetest.R.id"/>
 <fullyQualifiedTypeName name="android.content.SharedPreferences"/>
 <fullyQualifiedTypeName name="com.example.sharedpreferencetest.MainActivity"/>
@@ -23,7 +22,6 @@
 <fullyQualifiedTypeName name="com.example.broadcastbestpractice.R.id"/>
 <fullyQualifiedTypeName name="android.widget.Toast"/>
 <fullyQualifiedTypeName name="com.example.databasetest.R.id"/>
-<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
 <fullyQualifiedTypeName name="android.content.ContentValues"/>
 <fullyQualifiedTypeName name="com.example.contactstest.R.id"/>
 <fullyQualifiedTypeName name="android.R"/>
@@ -31,4 +29,13 @@
 <fullyQualifiedTypeName name="android.provider.ContactsContract"/>
 <fullyQualifiedTypeName name="android.provider.ContactsContract.CommonDataKinds"/>
 <fullyQualifiedTypeName name="android.provider.ContactsContract.CommonDataKinds.Phone"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.content.Context"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="android.app.Notification.Builder"/>
+<fullyQualifiedTypeName name="com.example.notificationtest.R.drawable"/>
+<fullyQualifiedTypeName name="com.example.notificationtest.R.id"/>
+<fullyQualifiedTypeName name="com.example.notificationtest.R.layout"/>
+<fullyQualifiedTypeName name="android.app.PendingIntent"/>
+<fullyQualifiedTypeName name="android.graphics.Color"/>
 </qualifiedTypeNameHistroy>
