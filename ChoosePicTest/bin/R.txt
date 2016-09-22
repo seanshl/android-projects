@@ -239,7 +239,7 @@ int id action_menu_presenter 0x7f090003
 int id action_mode_bar 0x7f09002f
 int id action_mode_bar_stub 0x7f09002e
 int id action_mode_close_button 0x7f090022
-int id action_settings 0x7f090042
+int id action_settings 0x7f090044
 int id activity_chooser_view_content 0x7f090023
 int id always 0x7f09000d
 int id beginning 0x7f090014
@@ -265,6 +265,7 @@ int id middle 0x7f090016
 int id never 0x7f090010
 int id none 0x7f090017
 int id normal 0x7f090005
+int id picture 0x7f090043
 int id progress_circular 0x7f090034
 int id progress_horizontal 0x7f090035
 int id radio 0x7f09002d
@@ -287,6 +288,7 @@ int id showTitle 0x7f09000b
 int id split_action_bar 0x7f09001c
 int id submit_area 0x7f09003f
 int id tabMode 0x7f090006
+int id take_photo 0x7f090042
 int id title 0x7f090029
 int id title_container 0x7f090030
 int id top_action_bar 0x7f09001e
