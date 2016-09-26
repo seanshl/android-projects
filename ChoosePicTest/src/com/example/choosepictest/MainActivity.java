@@ -24,6 +24,8 @@ public class MainActivity extends ActionBarActivity {
 
 	private Button takePhoto;
 	
+	private Button chooseFromAlbum;
+	
 	private ImageView picture;
 	
 	private Uri imageUri;
@@ -34,6 +36,7 @@ public class MainActivity extends ActionBarActivity {
 		setContentView(R.layout.activity_main);
 		this.takePhoto = (Button)this.findViewById(R.id.take_photo);
 		this.picture = (ImageView) this.findViewById(R.id.picture);
+		this.chooseFromAlbum = (Button)this.findViewById(R.id.choose_from_album);
 		
 		takePhoto.setOnClickListener(new OnClickListener() {
 
@@ -53,6 +56,31 @@ public class MainActivity extends ActionBarActivity {
 				Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
 				intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
 				MainActivity.this.startActivityForResult(intent, TAKE_PHOTO);
+			}
+			
+		});
+		
+		chooseFromAlbum.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				File outputImage = new File(Environment.getExternalStorageDirectory(), "output_image.jpg");
+				try {
+					if (outputImage.exists()) {
+						outputImage.delete();
+					}
+					outputImage.createNewFile();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+				
+				imageUri = Uri.fromFile(outputImage);
+				Intent intent = new Intent("android.intent.action.GET_CONTENT");
+				intent.setType("image/*");
+				intent.putExtra("crop", true);
+				intent.putExtra("scale", true);
+				intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
+				startActivityForResult(intent, CROP_PHOTO);
 			}
 			
 		});
